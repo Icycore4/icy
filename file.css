@@ -6,114 +6,82 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Poppins', sans-serif; /* Modern font from Google Fonts */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
-  background-color: #F8F8F1; /* Light creme background */
+  min-height: 100vh;
+  background-color: #f4f4f9; /* Softer background */
   color: #333;
   text-align: center;
-}
-
-header {
-  background-color: #A89F91; /* Light brown background for header */
+  transition: background-color 0.5s ease; /* Faster transition */
   padding: 20px;
 }
 
-header nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-}
-
-header nav ul li {
-  margin: 0 15px;
-}
-
-header nav ul li a {
-  text-decoration: none;
+/* Header Styling */
+header {
+  background-color: #1F2937; /* Darker, modern header */
   color: white;
-  font-weight: bold;
-  font-size: 18px;
+  padding: 20px 40px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border-radius: 10px;
 }
 
-header nav ul li a:hover {
-  color: #D1C4A1; /* Light gray hover effect */
+header h1 {
+  font-size: 2rem;
+  letter-spacing: 1.5px;
 }
 
 main {
-  padding: 40px 20px;
-  background-color: #EAE4D9; /* Very light gray background for the main content */
+  padding: 40px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  transition: transform 0.3s ease;
 }
 
-h1 {
-  font-size: 2rem;
-  color: #5C5346; /* Dark brown text color */
-  margin-bottom: 20px;
+main:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
 }
 
-p {
-  font-size: 1.2rem;
-  color: #5C5346;
-}
-
+/* Button Styling */
 button {
-  padding: 10px 20px;
+  padding: 12px 24px;
   font-size: 16px;
   cursor: pointer;
-  background-color: #A89F91;
+  background-color: #3B82F6; /* Modern blue button */
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 button:hover {
-  background-color: #8F7A61; /* Darker brown for hover effect */
+  background-color: #2563EB;
+  transform: scale(1.05); /* Button scale effect */
 }
 
-/* Form Styles for Contact Page */
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  max-width: 400px;
-  margin: 0 auto;
-}
-
-form input, form textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-form button {
-  background-color: #A89F91;
-  padding: 10px 20px;
-  color: white;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
-}
-
-form button:hover {
-  background-color: #8F7A61;
-}
-
-/* Footer */
+/* Footer Styling */
 footer {
-  background-color: #A89F91;
-  color: white;
-  padding: 10px;
   text-align: center;
-  font-size: 0.9rem;
+  padding: 20px;
+  background-color: #1F2937; /* Match header */
+  color: white;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: auto; /* Stick to bottom flexibly */
 }
 
-footer p {
-  margin: 0;
+/* Responsive Design */
+@media (max-width: 768px) {
+  main {
+    padding: 20px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
 }
-
-
