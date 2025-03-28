@@ -7,20 +7,25 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(244, 244, 249); /* Default light gray background */
   color: #333;
+  text-align: center; /* Center-align text */
+  transition: background-color 1s ease; /* Smooth transition for background color change */
 }
 
 header {
   background-color: #4CAF50;
   color: white;
-  text-align: center;
   padding: 20px;
+  margin-bottom: 20px;
 }
 
 main {
   padding: 20px;
-  text-align: center;
 }
 
 button {
@@ -31,6 +36,7 @@ button {
   color: white;
   border: none;
   border-radius: 5px;
+  margin-top: 20px;
 }
 
 button:hover {
@@ -42,4 +48,8 @@ footer {
   padding: 10px;
   background-color: #333;
   color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
+
